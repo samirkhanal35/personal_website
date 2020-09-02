@@ -54,25 +54,40 @@ top_info_bar.appendChild(social_media);
 var buttons = document.getElementsByClassName('buttons')[0];
 
 //home button
-var home_button = document.createElement('div');
-home_button.href = "{{ url_for('home') }}";
+var left_button = document.createElement('div');
+// left_button.style.float = 'left';
+left_button.classList.add('left_button');
+
+
+var home_button = document.createElement('a');
+home_button.href = "/";
+home_button.style.textDecoration = "none";
 home_button.innerHTML = '<div class="home_button">HOME</div>';
+left_button.appendChild(home_button);
+
+var right_buttons = document.createElement('div');
+// right_buttons.style.float = 'right';
+right_buttons.classList.add('right_buttons');
 
 
 //projects button
 var projects_button = document.createElement('a');
-projects_button.href = "{{ url_for('projects') }}"
+projects_button.href = "/projects";
+projects_button.style.textDecoration = "none";
 projects_button.innerHTML = '<div class="projects_button">PROJECTS</div>';
 
 
 //Articles
 var articles_button = document.createElement('a');
-articles_button.href = "{{ url_for('articles') }}"
+articles_button.href = "/articles";
+articles_button.style.textDecoration = "none";
 articles_button.innerHTML = '<div class="articles_button">ARTICLES</div>';
 
-buttons.appendChild(home_button);
-buttons.appendChild(projects_button);
-buttons.appendChild(articles_button);
+buttons.appendChild(left_button);
+right_buttons.appendChild(projects_button);
+right_buttons.appendChild(articles_button);
+
+buttons.appendChild(right_buttons);
 
 
 
