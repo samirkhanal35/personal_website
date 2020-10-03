@@ -1,7 +1,7 @@
 .main_div {
     width: 1440px;
-    height: 1024px;
-    background: #A0D7FF;
+    /* height: 1024px; */
+    background: #617C8E;
     display: table;
 }
 
@@ -9,7 +9,7 @@
 .left_content{
     position: absolute;
     width: 822px;
-    height: 1024px;
+    /* height: 1024px; */
     left: 0px;
     top: 0px;
 }
@@ -20,7 +20,7 @@
     margin-left: 0px;
     margin-top: 0px;
     /* padding-top: 14px; */
-    background: #78B8E6;
+    background: #617C8E;
 }
 .left_top_info_bar{
     float: left;
@@ -129,7 +129,7 @@
     margin-left: 0px;
     /* float: left; */
     /* top: 60px; */
-    background: #7BC8FF;
+    background: #7191A7;
     border: 1px solid #FFFDFD;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -161,7 +161,7 @@
     margin-left: 30px;
     /* 282-226 = 56 */
     /* top: 60px; */
-    background: #7BC8FF;
+    background: #7191A7;
     border: 1px solid #FFFDFD;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -188,7 +188,7 @@
     float: right;
     margin-left: 30px;
     /* top: 60px; */
-    background: #7BC8FF;
+    background: #7191A7;
     border: 1px solid #FFFDFD;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -280,7 +280,7 @@
     border: 1px solid #005C9E;
     box-sizing: border-box;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-    background: url("../images/school.jpg");
+    background: url("../images/school.png");
     border-radius: 191px;
     background-repeat:no-repeat;
     background-size: contain;
@@ -395,35 +395,45 @@
 /*******8 projects page contents ***********88 */
 .projects_contents{
     width: 679px;
-    height: 773px;
+    /* height: auto; */
     margin-left: 47px;
     margin-top: 78px;
-}
-/* 
-.projects_header{
-
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .projects_list{
+    color:white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 10px;
 
-} */
+} 
 
 /*******8 articles page contents ***********88 */
 .articles_contents{
     width: 679px;
-    height: 773px;
+    /* height: auto; */
     margin-left: 47px;
     margin-top: 78px;
-}
-/* 
-.articles_header{
-
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .articles_list{
+    color:white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 10px;
+    line-height: 22px;
+}
 
-} */
-
+.links{
+    text-decoration: none;
+    color: white;
+}
 /* ------------------------------------------------------------ */
 /************* right side *****************/
 /* ----------------------------------------------------------------- */
@@ -433,7 +443,7 @@
     height: 1024px;
     right: 0px;
     float: right;
-    background: #7BC8FF;
+    background: #5B7486;
 }
 
 .header{

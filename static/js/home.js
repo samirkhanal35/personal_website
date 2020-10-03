@@ -1,4 +1,5 @@
-//left content
+//body
+document.body.style.backgroundColor = '#617C8E';
 
 //top info bar
 var top_info_bar = document.getElementsByClassName('top_info_bar')[0];

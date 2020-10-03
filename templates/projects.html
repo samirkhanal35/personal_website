@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,87 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/style.css') }}">
     <title>Projects</title>
 </head>
+
 <body>
     {% extends "home.html" %}
-    
+
     {% block content %}
     <div class="projects_contents">
-                
+
+    </div>
+    <div class="projects_list">
+        <ul>
+            <li>
+
+               <b>Nepali reader(major project) | <a href="">code(repo)</a> |:</b><br/>
+                It is a recognizer developed using Convolutional Neural Network. It is used to recognize the printed
+                Nepali characters from their images.
+                It is developed Using Python, CNN, DNN.
+            </li><br/>
+            <li> 
+                <b>Nepali Digit Recognizer(minor project) | <a href="">code(repo)</a> |:</b><br/>
+                It is a recognizer developed using Tensorflow. It is used to recognize the printed Nepali digits from
+                their images.
+                It is developed using Python, Image Processing, Multilayered Neural Network.
+
+            </li><br/>
+            <li>
+                <b>Minor-demo | <a href="">code(repo)</a> |:</b><br/>
+                It is a sample demo of how 'Nepali Digit Recognizer' works.
+                It is optimized and Hosted on Heroku using Flask <b><a href="">here</a></b>.
+            </li><br/>
+            <li>
+                <b>Cartoonize/Sketch | <a href="">code(repo)</a> | :</b><br/>
+                It is a simple flask app which is used to upload and convert images into cartoon and sketch form and can
+                also download the cartoon and sketch image.
+                It is developed using Python, OpenCV and Flask.
+                This project is Hosted on Heroku using Flask <b><a href="">here</a></b> .
+            </li><br/>
+            <li>
+                <b>X-Ray Enhancer | <a href="">code(repo)</a> |:</b><br/>
+                It is a simple Desktop based application which is used to enhance X-Ray.
+                It is developed using OpenCV, Python and Tkinter.
+                X-Ray is enhanced using Laplacian filter and sobel filter with adding of mask and image.
+            </li><br/>
+            <li>
+                <b>Picture painting OpenCV | <a href="">code(repo)</a> |:</b><br/>
+                It is a simple Desktop based OpenCV project.
+                It is developed using OpenCV, Python and Tkinter.
+                It involves Oil painting, water colour painting and pencil sketch using OpenCV library.
+
+            </li><br/>
+            <li>
+                <b>Attendance-system-using-python-mysql | <a href="">code(repo)</a> |:</b><br/>
+                It is a simple desktop based Attendance System.
+                It is developed using Python and MySQL.
+                Its main features are to create tables, delete tables, update entry, entry data, show attendance, update
+                attendance and rollback and commit.
+            </li><br/>
+            <li>
+                <b>Image-processor | <a href="">code(repo)</a> |:</b><br/>
+                It is a simple Desktop based project.
+                It is developed using Python and Tkinter.
+                It involves Implementation of different image processing techniques like Gray scale conversion, Min
+                filter, Max filter, Mean filter, Median filter, etc through hard coding using Python along with their
+                histogram.
+            </li><br/>
+            <li>
+                <b>Exam-checker | <a href="">code(repo)</a> |:</b><br/>
+                It is a simple Desktop based answer checker project.
+                It is developed using Python, Tkinter and NLTK Toolkit.
+                It uses already provided keywords as references.Then it calculates the frequency of key words on the
+                answer to calculate marks using the frequency distribution of NLTK tool-kit.
+
+            </li><br/>
+        </ul>
     </div>
     <!-- <script type="text/javascript" src="../static/js/home.js"></script>
     <script type="text/javascript" src="../static/js/projects_contents.js"></script> -->
-    
+
     <script type="text/javascript" src="{{ url_for('static',    filename='js/projects_contents.js') }}"></script>
-    
+
     {% endblock %}
     <script type="text/javascript" src="{{ url_for('static',    filename='js/home.js') }}"></script>
 </body>
+
 </html>

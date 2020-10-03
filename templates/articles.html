@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,66 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/style.css') }}">
     <title>Articles</title>
 </head>
+
 <body>
     {% extends "home.html" %}
-    
+
     {% block content %}
     <div class="articles_contents">
-                
+
+    </div>
+    <div class="articles_list">
+        <ul>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/dilation-and-erosion-74e7d4c4a503" class="links">Dilation
+                        and Erosion</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/contrast-stretching-f25e7c4e8e33" class="links">Contrast
+                        Stretching</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/image-thresholding-2b0521dece2" class="links">Image
+                        Thresholding</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/negative-image-6cb7d5edcb54" class="links">Negative
+                        Image</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/relationships-between-pixels-neighbours-and-connectivity-d38e473cd994"
+                        class="links">Relationships between pixels(Neighbours and Connectivity)</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/image-resolution-a325e7c4009e" class="links">Image
+                        Resolution</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/digital-image-processing-d7e656589341"
+                        class="links">Digital Image Processing</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/digital-image-8cf08b054f42" class="links">Digital
+                        Image</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/simple-manual-character-segmentation-from-images-1ab5b499f15f"
+                        class="links">Simple manual character segmentation from images</a></b>
+            </li>
+            <li>
+                <b><a href="https://medium.com/@samirkhanal35/image-filtering-techniques-gaussian-blurring-and-median-filtering-7e1a8c2c78f3"
+                        class="links">Image Filtering Techniques: Gaussian Blurring and Median filtering</a></b>
+            </li>
+
+        </ul>
     </div>
     <!-- <script type="text/javascript" src="../static/js/home.js"></script>
     <script type="text/javascript" src="../static/js/articles_contents.js"></script> -->
-    
+
     <script type="text/javascript" src="{{ url_for('static',    filename='js/articles_contents.js') }}"></script>
-    
+
     {% endblock %}
     <script type="text/javascript" src="{{ url_for('static',    filename='js/home.js') }}"></script>
 </body>
+
 </html>
