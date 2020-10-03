@@ -117,7 +117,7 @@ right_content.appendChild(skills_header);
 
 //skills contents
 var skills_contents = document.createElement('div');
-skills_contents.innerText =  "Python, Django, Machine Learning, Keras, Numpy, Pandas, Tensorflow, Opencv, C, C++ , HTML, CSS, Basic Js";
+skills_contents.innerText =  "Python, Django, Flask, Machine Learning, Keras, Numpy, Pandas, Tensorflow, OpenCV, C, C++ , HTML, CSS, Javascript, Object Oriented Programming, REST API with flask, MySQL, Git, Basic React, Postman";
 skills_contents.classList.add('skills_contents');
 
 right_content.appendChild(skills_contents);
